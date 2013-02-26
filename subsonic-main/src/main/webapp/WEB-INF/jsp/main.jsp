@@ -290,6 +290,9 @@ function RefreshMediaType() {
             <sub:url value="http://www.youtube.com/results" var="YoutubeUrl" encoding="UTF-8">
                 <sub:param name="search_query" value="${model.artist}"/>
             </sub:url>
+            <sub:url value="http://www.google.com/search" var="google1001Url" encoding="UTF-8">
+                <sub:param name="q" value="\"site\:1001tracklists.com\" \"${model.artist}\" \"${model.album}\""/>
+            </sub:url>
 			<span display="inline" class="detailcolor"><fmt:message key="top.search"/></span> 
             <a target="_blank" href="${googleUrl}">Google</a> |
             <a target="_blank" href="${wikipediaUrl}">Wikipedia</a> |
@@ -297,7 +300,8 @@ function RefreshMediaType() {
             <a target="_blank" href="${MusiksammlerUrl}">MusikSammler</a> |
             <a target="_blank" href="${lautUrl}">Laut</a> |
             <a target="_blank" href="${lastFmUrl}">Last.fm</a> |
-            <a target="_blank" href="${YoutubeUrl}">Youtube</a>
+            <a target="_blank" href="${YoutubeUrl}">Youtube</a> |
+            <a target="_blank" href="${google1001URL}">1001 Tracklists</a>
         </c:if>
 		<br>
 	</div>
